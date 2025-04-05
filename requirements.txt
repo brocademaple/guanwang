@@ -1,0 +1,14 @@
+# 工程预装模块
+# 需要额外的python包，可直接在文件后面添加
+# 请确保指定的包和版本号，可通过pip安装
+
+Django==3.2.4
+gunicorn==19.6.0
+django-import-export
+django-simpleui
+Pillow==7.0
+docutils
+
+markdown~=3.3.7
+Pygments
+mysqlclient==2.0.3

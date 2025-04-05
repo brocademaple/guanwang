@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1105b710-c527-4eae-9915-c06e0528bcc6" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/data/缺陷识别/0002.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/缺陷识别/0004.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/缺陷识别/0005.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/缺陷识别/0007.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/缺陷识别/0008.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/emrecord/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/emrecord/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/emrecord/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/emrecord/migrations/0002_auto_20230401_2359.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/emrecord/migrations/0003_auto_20230402_0003.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/emrecord/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgclass/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgclass/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgclass/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgclass/migrations/0002_alter_imgclass_state.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgclass/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgseg/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgseg/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgseg/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgseg/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgseg/migrations/0002_image_state.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgseg/migrations/0003_auto_20230401_2230.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgseg/migrations/0004_auto_20230403_1350.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgseg/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/imgseg/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ptclass/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ptclass/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ptclass/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ptclass/migrations/0002_auto_20230401_2230.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ptclass/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ptclass/ptclass_admin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ptclass/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/bg/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/bg/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/icon/0002.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/icon/0002.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/icon/0004.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/icon/0005.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/icon/0007.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/icon/0008.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/imgclass_img/20200211_13刘海桥.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/imgclass_img/20200211_7王秀芝_E3z6erI.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/imgclass_img/20200211_7王秀芝_zkW6ItA.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/imgclass_img/black.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/logo/syslogo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/ptclass_file/破裂.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/ptclass_file/破裂_0BjBmjE.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/ptclass_file/破裂_OntUcCm.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/bkhrmsys-default.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/simpleui_demo-master.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/article/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/article/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/article/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/article/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/article/migrations/0002_auto_20221226_1703.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/article/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/emrecord/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/article/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/article/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/emrecord/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/article/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/imgclass/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance/migrations/0002_auto_20221226_2228.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance/migrations/0003_leave.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance/migrations/0004_leave_agree.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/emrecord/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/imgclass/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/attendance/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/imgseg/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/migrations/0002_auto_20221226_1703.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/imgseg/migrations/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/imgseg/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ptclass/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finance/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finance/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finance/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finance/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finance/migrations/0002_alter_record_id.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finance/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ptclass/templates/admin/ptclass/medical_report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finance/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finance/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/ptclass/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finance/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/emrecord/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpleui_demo/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/simpleui_demo/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpleui_demo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/simpleui_demo/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpleui_demo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/simpleui_demo/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/login.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2v4r8wsYCyOoxRYxuPeDYW63Hut" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/管网系统25.2.4/Pipe-network-defect-system25.2.4&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\管网系统25.2.4\Pipe-network-defect-system25.2.4" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Django 服务器.Pipe-network-defect-system25.2.4">
+    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Pipe-network-defect-system25.2.4" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.8 (9)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <EXTENSION ID="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </EXTENSION>
+      <option name="SCRIPT_NAME" value="manage.py" />
+      <option name="PARAMETERS" value="runserver" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Pipe-network-defect-system25.2.4" type="Python.DjangoServer" factoryName="Django server">
+      <module name="Pipe-network-defect-system25.2.4" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="simpleui_demo.settings" />
+      </envs>
+      <option name="SDK_HOME" value="D:\bcmp0wn\Pipe-network-defect-system25.2.4\9\Scripts\python.exe" />
+      <option name="SDK_NAME" value="Python 3.8 (9)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </EXTENSION>
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Django 服务器.Pipe-network-defect-system25.2.4" />
+      <item itemvalue="Python.manage" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="1105b710-c527-4eae-9915-c06e0528bcc6" name="更改" comment="" />
+      <created>1743415032605</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1743415032605</updated>
+      <workItem from="1743415033646" duration="726000" />
+      <workItem from="1743419949292" duration="4382000" />
+      <workItem from="1743425344139" duration="91000" />
+      <workItem from="1743425452602" duration="5486000" />
+      <workItem from="1743431577908" duration="42000" />
+      <workItem from="1743597971441" duration="5049000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Pipe_network_defect_system25_2_4$manage.coverage" NAME="manage 覆盖结果" MODIFIED="1743428267876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+  </component>
+</project>

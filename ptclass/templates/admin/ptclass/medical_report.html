@@ -1,0 +1,58 @@
+{% extends "admin/base_site.html" %}
+{% block content %}
+<h1 style="text-align: center; font-size: 52px;"><strong>管段缺陷报告</strong></h1>
+<div style="display: flex; flex-wrap: wrap; justify-content: center;">
+    {% for obj in queryset %}
+        <!-- 每两个对象放入一个新的.row容器中 -->
+        {% if forloop.counter0|divisibleby:2 %}
+            <div class="row" style="display: flex; justify-content: space-between; width: 80%; margin: 20px auto;">
+        {% endif %}
+            <div class="column" style="flex: 1; max-width: 45%; margin: 0 5px;">
+                <!-- 根据索引的奇偶性决定是否显示名称 -->
+                {% if not forloop.counter|divisibleby:2 %}
+                    <h2 style="font-size: 52px;">{{ obj.name }}</h2>
+                {% else %}
+                     <h2>&nbsp;</h2>
+                {% endif %}
+
+                <!-- 根据缺陷类型显示对应的文本 -->
+                {% if obj.defect_type == 0 %}
+                    <p><strong>缺陷类型:</strong> 未知</p>
+                {% elif obj.defect_type == 1 %}
+                    <p><strong>缺陷类型:</strong> 沉积</p>
+                {% elif obj.defect_type == 2 %}
+                    <p><strong>缺陷类型:</strong> 错口</p>
+                {% elif obj.defect_type == 3 %}
+                    <p><strong>缺陷类型:</strong> 破裂</p>
+                {% endif %}
+
+                <p><strong>缺陷描述:</strong> {{ obj.defect_density }}</p>
+                <p><strong>缺陷图像:</strong></p>
+                <img src="{{ obj.image.url }}" alt="缺陷图像" width="100%">
+
+                <!-- 根据修复类型显示对应的文本 -->
+                {% if obj.state == 0 %}
+                    <p><strong>修复类型:</strong> 无需修复</p>
+                {% elif obj.state == 1 %}
+                    <p><strong>修复类型:</strong> 立即修复</p>
+                {% elif obj.state == 2 %}
+                    <p><strong>修复类型:</strong> 尽快修复</p>
+                {% elif obj.state == 3 %}
+                    <p><strong>修复类型:</strong> 未知</p>
+                {% endif %}
+                <p><strong>修复/养护建议:</strong> {{ obj.diagnosis }}</p>
+            </div>
+        <!-- 如果是每行的第二个对象或者查询集的最后一个对象，则关闭.row容器 -->
+        {% if forloop.counter0|add:1|divisibleby:2 or forloop.last %}
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
+
+<!-- 导出报告按钮 -->
+<div style="text-align: center; margin: 20px;">
+    <a href="{% url 'export_report' %}" class="btn btn-primary" style="padding: 10px 20px; font-size: 16px;">导出报告</a>
+</div>
+
+<a href="javascript:history.back()" style="display: block; margin: 20px auto; text-align: center;">返回</a>
+{% endblock %}
