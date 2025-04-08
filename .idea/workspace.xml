@@ -5,105 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1105b710-c527-4eae-9915-c06e0528bcc6" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/data/缺陷识别/0002.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/缺陷识别/0004.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/缺陷识别/0005.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/缺陷识别/0007.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/缺陷识别/0008.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/emrecord/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/emrecord/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/emrecord/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/emrecord/migrations/0002_auto_20230401_2359.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/emrecord/migrations/0003_auto_20230402_0003.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/emrecord/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgclass/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgclass/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgclass/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgclass/migrations/0002_alter_imgclass_state.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgclass/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgseg/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgseg/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgseg/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgseg/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgseg/migrations/0002_image_state.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgseg/migrations/0003_auto_20230401_2230.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgseg/migrations/0004_auto_20230403_1350.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgseg/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/imgseg/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ptclass/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ptclass/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ptclass/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ptclass/migrations/0002_auto_20230401_2230.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ptclass/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ptclass/ptclass_admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ptclass/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bg/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/bg/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/icon/0002.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/icon/0002.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/icon/0004.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/icon/0005.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/icon/0007.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/icon/0008.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/imgclass_img/20200211_13刘海桥.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/imgclass_img/20200211_7王秀芝_E3z6erI.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/imgclass_img/20200211_7王秀芝_zkW6ItA.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/imgclass_img/black.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/logo/syslogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/ptclass_file/破裂.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/ptclass_file/破裂_0BjBmjE.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/ptclass_file/破裂_OntUcCm.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/bkhrmsys-default.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/simpleui_demo-master.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/article/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/article/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/article/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/article/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/article/migrations/0002_auto_20221226_1703.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/article/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/emrecord/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/article/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/article/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/emrecord/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/article/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/imgclass/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attendance/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/attendance/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/attendance/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/attendance/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/attendance/migrations/0002_auto_20221226_2228.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/attendance/migrations/0003_leave.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/attendance/migrations/0004_leave_agree.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/attendance/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/emrecord/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attendance/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/attendance/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/imgclass/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/attendance/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/imgseg/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/migrations/0002_auto_20221226_1703.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/imgseg/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/imgseg/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ptclass/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finance/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/finance/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/finance/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/finance/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/finance/migrations/0002_alter_record_id.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/finance/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/ptclass/templates/admin/ptclass/medical_report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finance/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/finance/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/ptclass/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finance/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/emrecord/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleui_demo/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/simpleui_demo/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleui_demo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/simpleui_demo/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simpleui_demo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/simpleui_demo/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/defect_repair/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/defect_repair/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,27 +41,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/管网系统25.2.4/Pipe-network-defect-system25.2.4&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "E:/simpleui-demo",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\管网系统25.2.4\Pipe-network-defect-system25.2.4" />
@@ -252,6 +155,7 @@
       <workItem from="1743425452602" duration="5486000" />
       <workItem from="1743431577908" duration="42000" />
       <workItem from="1743597971441" duration="5049000" />
+      <workItem from="1743822374886" duration="11059000" />
     </task>
     <servers />
   </component>
