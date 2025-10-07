@@ -1,8 +1,43 @@
-version: '3'
+version: '3.8'
+
 services:
-    simpleui_demo_docker:
-      build: .
-      container_name: simpleui_demo_docker
-      restart: always
-      ports:
-        - 8000:8000
+  # MySQL数据库服务
+  db:
+    image: mysql:8.0
+    container_name: mysql_pipe_system
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: pipedb
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./pipedb.sql:/docker-entrypoint-initdb.d/01_pipedb.sql
+    ports:
+      - "3306:3306"
+    networks:
+      - pipe_network
+
+  # phpMyAdmin用于数据库管理
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin_pipe_system
+    restart: always
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+    environment:
+      - PMA_HOST=db
+      - MYSQL_ROOT_PASSWORD=root
+    networks:
+      - pipe_network
+
+# 网络配置
+networks:
+  pipe_network:
+    driver: bridge
+
+# 数据卷配置
+volumes:
+  mysql_data:
+    driver: local

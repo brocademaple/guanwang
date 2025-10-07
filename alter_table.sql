@@ -1,0 +1,1 @@
+ALTER TABLE defect_repair_defectinfo MODIFY COLUMN structural_defect_parameter DECIMAL(5,2) NOT NULL DEFAULT 0;

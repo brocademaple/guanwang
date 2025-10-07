@@ -1,68 +1,102 @@
 # defect_repair/admin.py
 from django.contrib import admin
 from django.utils.safestring import mark_safe
-from .models import defectinfo, repairsuggestion
+from .models import defectinfo, repairsuggestion, PipeSection
 from django.contrib import messages
 from django import forms
 
-# 新加的代码
+# 注册PipeSection模型到admin
+@admin.register(PipeSection)
+class PipeSectionAdmin(admin.ModelAdmin):
+    list_display = ('work_point_name', 'start_well_number', 'end_well_number', 'pipe_length', 'pipe_type', 'pipe_material')
+    search_fields = ('work_point_name', 'start_well_number', 'end_well_number')
+    list_filter = ('pipe_type', 'pipe_material', 'area_type', 'soil_type')
+    ordering = ('-id',)
+    list_per_page = 10
+    
+    # 详细表单布局
+    fieldsets = (
+        ('管段基本信息', {
+            'fields': ('work_point_name', 'start_well_number', 'end_well_number', 'pipe_length')
+        }),
+        ('管道属性', {
+            'fields': ('pipe_type', 'pipe_material', 'pipe_diameter', 'start_depth', 'end_depth')
+        }),
+        ('环境与地质信息', {
+            'fields': ('area_type', 'soil_type', 'wet_loess_level', 'expansive_soil_level', 'silt_type')
+        }),
+        ('缺陷密度', {
+            'fields': ('defect_density',),
+            # 'classes': ('collapse',)
+        })
+    )
+
+# 更新defectinfo表单，移除不再需要的字段
 class DefectInfoAdminForm(forms.ModelForm):
     class Meta:
         model = defectinfo
         fields = '__all__'
-
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.fields['wet_loess_level'].widget.attrs['style'] = 'display:none;'
-        self.fields['expansive_soil_level'].widget.attrs['style'] = 'display:none;'
-        self.fields['silt_type'].widget.attrs['style'] = 'display:none;'
-
-    def clean(self):
-        cleaned_data = super().clean()
-        soil_type = cleaned_data.get('soil_type')
-        if soil_type == '湿陷性黄土' and not cleaned_data.get('wet_loess_level'):
-            self.add_error('wet_loess_level', '请选择湿陷性黄土等级')
-        elif soil_type == '膨胀土' and not cleaned_data.get('expansive_soil_level'):
-            self.add_error('expansive_soil_level', '请选择膨胀土等级')
-        elif soil_type == '淤泥类土' and not cleaned_data.get('silt_type'):
-            self.add_error('silt_type', '请选择淤泥类土类型')
-        return cleaned_data
-
-
+        exclude = ('defect_density',)  # 移除不再需要的字段
 
 @admin.register(defectinfo)
 class DefectInfoAdmin(admin.ModelAdmin):
-    list_display = ('work_point_name', 'defect_name', 'defect_level', 'pipe_type', 'pipe_material')
-    # 以下为测试加按钮功能的代码
-    # # 增加自定义按钮
-    # actions = ['make_copy', 'custom_button']
-    #
-    # def custom_button(self, request, queryset):
-    #     pass
-    #
-    # # 显示的文本，与django admin一致
-    # custom_button.short_description = '测试按钮'
-    # # icon，参考element-ui icon与https://fontawesome.com
-    # custom_button.icon = 'fas fa-audio-description'
-    #
-    # # 指定element-ui的按钮类型，参考https://element.eleme.cn/#/zh-CN/component/button
-    # custom_button.type = 'danger'
-    #
-    # # 给按钮追加自定义的颜色
-    # custom_button.style = 'color:black;'
-    #
-    # def make_copy(self, request, queryset):
-    #     pass
-    #
-    # make_copy.short_description = '复制员工'
-    # 以上为测试加按钮功能的代码
+    form = DefectInfoAdminForm
+    # list_display = ('defect_name', 'defect_level', 'defect_score', 'get_pipe_section_name', 'get_pipe_type', 'get_pipe_material', 'get_F_value', 'get_Sm_value', 'get_RI_value', 'get_repair_suggestion', 'get_repair_measures')
+    list_display = ('defect_name', 'defect_level', 'defect_score', 'get_pipe_section_name', 'get_pipe_type', 'get_pipe_material', 'get_F_value', 'get_Sm_value', 'get_RI_value', 'get_repair_suggestion')
 
-    list_filter = ('defect_level', 'pipe_type', 'pipe_material')
-    search_fields = ('work_point_name', 'defect_name', 'start_well_number', 'end_well_number')
+    list_filter = ('defect_level',)
+    search_fields = ('pipe_section__work_point_name', 'pipe_section__start_well_number', 'pipe_section__end_well_number', 'defect_name')
     ordering = ('-id',)
-
+    list_per_page = 10
+    
+    # 详细表单布局
+    fieldsets = (
+        ('关联信息', {
+            'fields': ('pipe_section',)
+        }),
+        ('缺陷信息', {
+            'fields': ('defect_name', 'defect_level', 'defect_start_position_m', 'defect_end_position_m')
+        }),
+        ('缺陷位置（钟表法）', {
+            'fields': ('defect_start_position_clock', 'defect_end_position_clock')
+        })
+    )
+    
+    # 自定义显示字段，从pipe_section获取信息
+    @admin.display(description='所属管段名称')
+    def get_pipe_section_name(self, obj):
+        return obj.pipe_section.work_point_name or '未命名'
+    
+    @admin.display(description='管道类型')
+    def get_pipe_type(self, obj):
+        return obj.pipe_section.pipe_type
+    
+    @admin.display(description='管段材质')
+    def get_pipe_material(self, obj):
+        return obj.pipe_section.pipe_material
+    
+    @admin.display(description='F值')
+    def get_F_value(self, obj):
+        return round(obj.pipe_section.calculate_F(), 2)
+    
+    @admin.display(description='Sm值')
+    def get_Sm_value(self, obj):
+        return f"{obj.pipe_section.calculate_Sm():.3f}"
+    
+    @admin.display(description='RI值')
+    def get_RI_value(self, obj):
+        return round(obj.pipe_section.calculate_RI(), 2)
+    
+    @admin.display(description='修复建议')
+    def get_repair_suggestion(self, obj):
+        return obj.get_repair_suggestion()
+    
+    # @admin.display(description='具体修复措施')
+    # def get_repair_measures(self, obj):
+    #     # 从defect_info获取实时计算的修复措施
+    #     return obj.get_repair_measures()
     @admin.display(description='待判别图像', ordering='name')
-    def auto_detect_level(self, obj, queryset):
+    def auto_detect_level(self, request, queryset):
         for obj in queryset:
             if '破裂' in obj.defect_name or '渗漏' in obj.defect_name or '脱节' in obj.defect_name:
                 obj.defect_level = '3级'  # 假设这类缺陷为3级
@@ -83,18 +117,55 @@ class DefectInfoAdmin(admin.ModelAdmin):
     auto_detect_level.type = 'success'
     actions = [auto_detect_level]
 
-    list_per_page = 10
-
     class Media:
         js = ('js/defect_info_admin.js',)
 
-
 @admin.register(repairsuggestion)
 class RepairSuggestionAdmin(admin.ModelAdmin):
-    list_display = ('defect_info', 'repair_suggestion')
-    search_fields = ('repair_suggestion', 'defect_info__work_point_name')
+    list_display = ('get_defect_name',  'get_defect_level', 'get_pipe_section_name', 'get_F_value', 'get_Sm_value', 'get_RI_value', 'get_repair_suggestion', 'get_repair_measures')
+    search_fields = ('repair_suggestion', 'defect_info__pipe_section__work_point_name', 'defect_info__defect_name')
     ordering = ('-id',)
+    
+    @admin.display(description='缺陷名称')
+    def get_defect_name(self, obj):
+        return obj.defect_info.defect_name
+    
 
+        
+    
+    @admin.display(description='缺陷等级')
+    def get_defect_level(self, obj):
+        return obj.defect_info.defect_level
+    
+    @admin.display(description='所属管段名称')
+    def get_pipe_section_name(self, obj):
+        return obj.defect_info.pipe_section.work_point_name or '未命名'
+    
+    @admin.display(description='F值')
+    def get_F_value(self, obj):
+        return round(obj.defect_info.pipe_section.calculate_F(), 2)
+    
+    @admin.display(description='Sm值')
+    def get_Sm_value(self, obj):
+        return f"{obj.defect_info.pipe_section.calculate_Sm():.3f}"
+    
+    @admin.display(description='RI值')
+    def get_RI_value(self, obj):
+        return round(obj.defect_info.pipe_section.calculate_RI(), 2)
+    
+    # @admin.display(description='修复建议')
+    # def get_repair_suggestion_text(self, obj):
+    #     return obj.repair_suggestion
+
+    @admin.display(description='修复建议')
+    def get_repair_suggestion(self, obj):
+        # 与DefectInfoAdmin保持一致，从defect_info获取实时计算的修复建议
+        return obj.defect_info.get_repair_suggestion()
+        
+    @admin.display(description='具体修复措施')
+    def get_repair_measures(self, obj):
+        # 与DefectInfoAdmin保持一致，从defect_info获取实时计算的修复措施
+        return obj.defect_info.get_repair_measures()
 
 # 自定义菜单
 def get_app_list(self, request):

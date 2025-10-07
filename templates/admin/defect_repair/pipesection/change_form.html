@@ -1,0 +1,40 @@
+{% extends "admin/change_form.html" %}
+{% load i18n admin_urls static admin_modify %}
+
+{% block extrahead %}
+{{ block.super }}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    // 初始隐藏所有二级选项
+    $('#id_wet_loess_level').closest('.form-row').hide();
+    $('#id_expansive_soil_level').closest('.form-row').hide();
+    $('#id_silt_type').closest('.form-row').hide();
+    
+    // 根据当前选中的土质类型显示对应的二级选项
+    function updateSoilOptions() {
+        const soilType = $('#id_soil_type').val();
+        
+        // 先隐藏所有二级选项
+        $('#id_wet_loess_level').closest('.form-row').hide();
+        $('#id_expansive_soil_level').closest('.form-row').hide();
+        $('#id_silt_type').closest('.form-row').hide();
+        
+        // 根据选中的土质类型显示对应的二级选项
+        if (soilType === '湿陷性黄土') {
+            $('#id_wet_loess_level').closest('.form-row').show();
+        } else if (soilType === '膨胀土') {
+            $('#id_expansive_soil_level').closest('.form-row').show();
+        } else if (soilType === '淤泥类土') {
+            $('#id_silt_type').closest('.form-row').show();
+        }
+    }
+    
+    // 初始执行一次
+    updateSoilOptions();
+    
+    // 监听土质类型变化事件
+    $('#id_soil_type').change(updateSoilOptions);
+});
+</script>
+{% endblock %}

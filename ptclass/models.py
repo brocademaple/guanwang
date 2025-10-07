@@ -13,7 +13,8 @@ class PtClass(models.Model):
     # 缺陷描述
     defect_density = models.TextField(
         verbose_name='缺陷描述',
-        help_text='请输入缺陷描述'
+        help_text='请输入缺陷描述',
+        default=''  # 添加默认值
     )
     defect_type = models.IntegerField(choices=defect_type_choices, verbose_name='缺陷类型', help_text='请选择缺陷类型', default=0)
     image = models.ImageField(upload_to='static/ptclass_file/', verbose_name='缺陷图像',

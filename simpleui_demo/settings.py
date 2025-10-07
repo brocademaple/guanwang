@@ -11,6 +11,9 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
+import pymysql
+# 让Django使用pymysql替代mysqlclient
+pymysql.install_as_MySQLdb()
 
 from django.conf.urls.static import static
 
@@ -49,8 +52,10 @@ INSTALLED_APPS = [
     'emrecord',
     # 缺陷识别
     'imgseg',
-    # 缺陷修复
+    # 结构性缺陷修复
     'defect_repair',
+    # 功能性缺陷修复
+    'func_defect_repair',
 ]
 
 MIDDLEWARE = [
@@ -85,6 +90,7 @@ WSGI_APPLICATION = 'simpleui_demo.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
+import os
 # 配置MySQL
 # DATABASES = {
 #     "default": {
@@ -99,11 +105,15 @@ WSGI_APPLICATION = 'simpleui_demo.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
-        "NAME": "pipedb",  # noqa
-        "USER": "root",
-        "PASSWORD": "root",
-        "HOST": "127.0.0.1",
-        "PORT": "3306",
+        "NAME": os.environ.get("DB_NAME", "pipedb"),  # noqa
+        "USER": os.environ.get("DB_USER", "root"),
+        "PASSWORD": os.environ.get("DB_PASSWORD", "root"),
+        "HOST": os.environ.get("DB_HOST", "127.0.0.1"),
+        "PORT": os.environ.get("DB_PORT", "3306"),
+        "OPTIONS": {
+            "charset": "utf8mb4",
+            "sql_mode": "traditional",
+        },
     },
 }
 
@@ -267,13 +277,13 @@ SIMPLEUI_CONFIG = {
             'view_only': False
         }]
     }, {
-        'name': '缺陷修复',
+        'name': '结构性缺陷修复',
         'icon': 'fas fa-tools',
         'app_label': 'defect_repair',
         'app_url': '/defect_repair/',
         'has_module_perms': True,
         'models': [{
-            'name': '缺陷录入',
+            'name': '结构性缺陷录入',
             'object_name': 'DefectInfo',
             'perms': {
                 'add': True,
@@ -285,7 +295,7 @@ SIMPLEUI_CONFIG = {
             'add_url': '/defect_repair/defectinfo/add/',
             'view_only': False
         }, {
-            'name': '修复建议',
+            'name': '结构性修复建议',
             'object_name': 'RepairSuggestion',
             'perms': {
                 'add': True,
@@ -297,7 +307,40 @@ SIMPLEUI_CONFIG = {
             'add_url': '/defect_repair/repairsuggestion/add/',
             'view_only': False
         }]
-    }, {
+    },
+        {
+            'name': '功能性缺陷修复',
+            'icon': 'fas fa-tools',
+            'app_label': 'func_defect_repair',
+            'app_url': '/func_defect_repair/',
+            'has_module_perms': True,
+            'models': [{
+                'name': '功能性缺陷录入',
+                'object_name': 'Funcdefectinfo',
+                'perms': {
+                    'add': True,
+                    'change': True,
+                    'delete': True,
+                    'view': True
+                },
+                'url': '/func_defect_repair/funcdefectinfo/',
+                'add_url': '/func_defect_repair/funcdefectinfo/add/',
+                'view_only': False
+            }, {
+                'name': '功能性修复建议',
+                'object_name': 'Funcrepairsuggestion',
+                'perms': {
+                    'add': True,
+                    'change': True,
+                    'delete': True,
+                    'view': True
+                },
+                'url': '/func_defect_repair/funcrepairsuggestion/',
+                'add_url': '/func_defect_repair/funcrepairsuggestion/add/',
+                'view_only': False
+            }]
+        },
+        {
         'name': '智慧方案',
         'icon': 'fas fa-book-open',
         'app_label': 'ptclass',

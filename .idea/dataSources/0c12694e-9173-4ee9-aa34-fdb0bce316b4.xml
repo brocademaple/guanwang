@@ -1113,8 +1113,8 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <CollationName>utf8_unicode_ci</CollationName>
     </schema>
     <schema id="286" parent="1" name="pipedb">
-      <IntrospectionTimestamp>2025-04-05.19:46:22</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2025-04-05.03:46:22</LocalIntrospectionTimestamp>
+      <IntrospectionTimestamp>2025-05-29.04:12:28</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2025-05-28.12:12:28</LocalIntrospectionTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <user id="287" parent="1" name="mysql.infoschema">
@@ -1219,1355 +1219,1527 @@ DYNAMIC</Options>
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="306" parent="286" name="image_class">
+    <table id="306" parent="286" name="func_defect_repair_funcdefectinfo">
+      <Engine>MyISAM</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="307" parent="286" name="func_defect_repair_funcrepairsuggestion">
+      <Engine>MyISAM</Engine>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="308" parent="286" name="image_class">
       <Engine>InnoDB</Engine>
       <Options>row_format
 DYNAMIC</Options>
       <CollationName>utf8_general_ci</CollationName>
     </table>
-    <table id="307" parent="286" name="image_class1">
+    <table id="309" parent="286" name="image_class1">
       <Engine>InnoDB</Engine>
       <Options>row_format
 DYNAMIC</Options>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="308" parent="286" name="imgseg_image">
-      <Engine>InnoDB</Engine>
-      <Options>row_format
-DYNAMIC</Options>
-      <CollationName>utf8_general_ci</CollationName>
-    </table>
-    <table id="309" parent="286" name="imgseg_image1">
-      <Engine>InnoDB</Engine>
-      <Options>row_format
-DYNAMIC</Options>
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </table>
-    <table id="310" parent="286" name="imgseg_image2">
-      <Engine>InnoDB</Engine>
-      <Options>row_format
-DYNAMIC</Options>
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </table>
-    <table id="311" parent="286" name="imgseg_image3">
-      <Engine>InnoDB</Engine>
-      <Options>row_format
-DYNAMIC</Options>
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </table>
-    <table id="312" parent="286" name="imgseg_image4">
-      <Engine>InnoDB</Engine>
-      <Options>row_format
-DYNAMIC</Options>
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </table>
-    <table id="313" parent="286" name="imgseg_image5">
-      <Engine>InnoDB</Engine>
-      <Options>row_format
-DYNAMIC</Options>
-      <CollationName>utf8mb4_0900_ai_ci</CollationName>
-    </table>
-    <table id="314" parent="286" name="patient_class">
+    <table id="310" parent="286" name="imgseg_image">
       <Engine>InnoDB</Engine>
       <Options>row_format
 DYNAMIC</Options>
       <CollationName>utf8_general_ci</CollationName>
     </table>
-    <table id="315" parent="286" name="patient_record">
+    <table id="311" parent="286" name="imgseg_image1">
+      <Engine>InnoDB</Engine>
+      <Options>row_format
+DYNAMIC</Options>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="312" parent="286" name="imgseg_image2">
+      <Engine>InnoDB</Engine>
+      <Options>row_format
+DYNAMIC</Options>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="313" parent="286" name="imgseg_image3">
+      <Engine>InnoDB</Engine>
+      <Options>row_format
+DYNAMIC</Options>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="314" parent="286" name="imgseg_image4">
+      <Engine>InnoDB</Engine>
+      <Options>row_format
+DYNAMIC</Options>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="315" parent="286" name="imgseg_image5">
+      <Engine>InnoDB</Engine>
+      <Options>row_format
+DYNAMIC</Options>
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </table>
+    <table id="316" parent="286" name="patient_class">
+      <Engine>InnoDB</Engine>
+      <Options>row_format
+DYNAMIC</Options>
+      <CollationName>utf8_general_ci</CollationName>
+    </table>
+    <table id="317" parent="286" name="patient_record">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="316" parent="286" name="text_class">
+    <table id="318" parent="286" name="text_class">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <column id="317" parent="291" name="id">
+    <column id="319" parent="291" name="id">
       <AutoIncrement>8</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="318" parent="291" name="name">
+    <column id="320" parent="291" name="name">
       <DasType>varchar(150)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <index id="319" parent="291" name="PRIMARY">
+    <index id="321" parent="291" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="320" parent="291" name="name">
+    <index id="322" parent="291" name="name">
       <ColNames>name</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="321" parent="291" name="PRIMARY">
+    <key id="323" parent="291" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="322" parent="291" name="name">
+    <key id="324" parent="291" name="name">
       <UnderlyingIndexName>name</UnderlyingIndexName>
     </key>
-    <column id="323" parent="292" name="id">
+    <column id="325" parent="292" name="id">
       <AutoIncrement>193</AutoIncrement>
       <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="324" parent="292" name="group_id">
+    <column id="326" parent="292" name="group_id">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="325" parent="292" name="permission_id">
+    <column id="327" parent="292" name="permission_id">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <foreign-key id="326" parent="292" name="auth_group_permissions_group_id_b120cbf9_fk_auth_group_id">
+    <foreign-key id="328" parent="292" name="auth_group_permissions_group_id_b120cbf9_fk_auth_group_id">
       <ColNames>group_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>auth_group</RefTableName>
     </foreign-key>
-    <foreign-key id="327" parent="292" name="auth_group_permissio_permission_id_84c5c92e_fk_auth_perm">
+    <foreign-key id="329" parent="292" name="auth_group_permissio_permission_id_84c5c92e_fk_auth_perm">
       <ColNames>permission_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>auth_permission</RefTableName>
     </foreign-key>
-    <index id="328" parent="292" name="PRIMARY">
+    <index id="330" parent="292" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="329" parent="292" name="auth_group_permissions_group_id_permission_id_0cd325b0_uniq">
+    <index id="331" parent="292" name="auth_group_permissions_group_id_permission_id_0cd325b0_uniq">
       <ColNames>group_id
 permission_id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="330" parent="292" name="auth_group_permissio_permission_id_84c5c92e_fk_auth_perm">
+    <index id="332" parent="292" name="auth_group_permissio_permission_id_84c5c92e_fk_auth_perm">
       <ColNames>permission_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="331" parent="292" name="PRIMARY">
+    <key id="333" parent="292" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="332" parent="292" name="auth_group_permissions_group_id_permission_id_0cd325b0_uniq">
+    <key id="334" parent="292" name="auth_group_permissions_group_id_permission_id_0cd325b0_uniq">
       <UnderlyingIndexName>auth_group_permissions_group_id_permission_id_0cd325b0_uniq</UnderlyingIndexName>
     </key>
-    <column id="333" parent="293" name="id">
+    <column id="335" parent="293" name="id">
       <AutoIncrement>93</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="334" parent="293" name="name">
+    <column id="336" parent="293" name="name">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="335" parent="293" name="content_type_id">
+    <column id="337" parent="293" name="content_type_id">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="336" parent="293" name="codename">
+    <column id="338" parent="293" name="codename">
       <DasType>varchar(100)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <foreign-key id="337" parent="293" name="auth_permission_content_type_id_2f476e4b_fk_django_co">
+    <foreign-key id="339" parent="293" name="auth_permission_content_type_id_2f476e4b_fk_django_co">
       <ColNames>content_type_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>django_content_type</RefTableName>
     </foreign-key>
-    <index id="338" parent="293" name="PRIMARY">
+    <index id="340" parent="293" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="339" parent="293" name="auth_permission_content_type_id_codename_01ab375a_uniq">
+    <index id="341" parent="293" name="auth_permission_content_type_id_codename_01ab375a_uniq">
       <ColNames>content_type_id
 codename</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="340" parent="293" name="PRIMARY">
+    <key id="342" parent="293" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="341" parent="293" name="auth_permission_content_type_id_codename_01ab375a_uniq">
+    <key id="343" parent="293" name="auth_permission_content_type_id_codename_01ab375a_uniq">
       <UnderlyingIndexName>auth_permission_content_type_id_codename_01ab375a_uniq</UnderlyingIndexName>
     </key>
-    <column id="342" parent="294" name="id">
-      <AutoIncrement>12</AutoIncrement>
+    <column id="344" parent="294" name="id">
+      <AutoIncrement>13</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="343" parent="294" name="password">
+    <column id="345" parent="294" name="password">
       <DasType>varchar(128)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="344" parent="294" name="last_login">
+    <column id="346" parent="294" name="last_login">
       <DasType>datetime(6)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="345" parent="294" name="is_superuser">
+    <column id="347" parent="294" name="is_superuser">
       <DasType>tinyint(1)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="346" parent="294" name="username">
+    <column id="348" parent="294" name="username">
       <DasType>varchar(150)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="347" parent="294" name="first_name">
+    <column id="349" parent="294" name="first_name">
       <DasType>varchar(150)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <column id="348" parent="294" name="last_name">
+    <column id="350" parent="294" name="last_name">
       <DasType>varchar(150)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>7</Position>
     </column>
-    <column id="349" parent="294" name="email">
+    <column id="351" parent="294" name="email">
       <DasType>varchar(254)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>8</Position>
     </column>
-    <column id="350" parent="294" name="is_staff">
+    <column id="352" parent="294" name="is_staff">
       <DasType>tinyint(1)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>9</Position>
     </column>
-    <column id="351" parent="294" name="is_active">
+    <column id="353" parent="294" name="is_active">
       <DasType>tinyint(1)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>10</Position>
     </column>
-    <column id="352" parent="294" name="date_joined">
+    <column id="354" parent="294" name="date_joined">
       <DasType>datetime(6)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>11</Position>
     </column>
-    <index id="353" parent="294" name="PRIMARY">
+    <index id="355" parent="294" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="354" parent="294" name="username">
+    <index id="356" parent="294" name="username">
       <ColNames>username</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="355" parent="294" name="PRIMARY">
+    <key id="357" parent="294" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="356" parent="294" name="username">
+    <key id="358" parent="294" name="username">
       <UnderlyingIndexName>username</UnderlyingIndexName>
     </key>
-    <column id="357" parent="295" name="id">
-      <AutoIncrement>10</AutoIncrement>
+    <column id="359" parent="295" name="id">
+      <AutoIncrement>11</AutoIncrement>
       <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="358" parent="295" name="user_id">
+    <column id="360" parent="295" name="user_id">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="359" parent="295" name="group_id">
+    <column id="361" parent="295" name="group_id">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <foreign-key id="360" parent="295" name="auth_user_groups_user_id_6a12ed8b_fk_auth_user_id">
+    <foreign-key id="362" parent="295" name="auth_user_groups_user_id_6a12ed8b_fk_auth_user_id">
       <ColNames>user_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>auth_user</RefTableName>
     </foreign-key>
-    <foreign-key id="361" parent="295" name="auth_user_groups_group_id_97559544_fk_auth_group_id">
+    <foreign-key id="363" parent="295" name="auth_user_groups_group_id_97559544_fk_auth_group_id">
       <ColNames>group_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>auth_group</RefTableName>
     </foreign-key>
-    <index id="362" parent="295" name="PRIMARY">
+    <index id="364" parent="295" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="363" parent="295" name="auth_user_groups_user_id_group_id_94350c0c_uniq">
+    <index id="365" parent="295" name="auth_user_groups_user_id_group_id_94350c0c_uniq">
       <ColNames>user_id
 group_id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="364" parent="295" name="auth_user_groups_group_id_97559544_fk_auth_group_id">
+    <index id="366" parent="295" name="auth_user_groups_group_id_97559544_fk_auth_group_id">
       <ColNames>group_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="365" parent="295" name="PRIMARY">
+    <key id="367" parent="295" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="366" parent="295" name="auth_user_groups_user_id_group_id_94350c0c_uniq">
+    <key id="368" parent="295" name="auth_user_groups_user_id_group_id_94350c0c_uniq">
       <UnderlyingIndexName>auth_user_groups_user_id_group_id_94350c0c_uniq</UnderlyingIndexName>
     </key>
-    <column id="367" parent="296" name="id">
+    <column id="369" parent="296" name="id">
       <AutoIncrement>60</AutoIncrement>
       <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="368" parent="296" name="user_id">
+    <column id="370" parent="296" name="user_id">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="369" parent="296" name="permission_id">
+    <column id="371" parent="296" name="permission_id">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <foreign-key id="370" parent="296" name="auth_user_user_permissions_user_id_a95ead1b_fk_auth_user_id">
+    <foreign-key id="372" parent="296" name="auth_user_user_permissions_user_id_a95ead1b_fk_auth_user_id">
       <ColNames>user_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>auth_user</RefTableName>
     </foreign-key>
-    <foreign-key id="371" parent="296" name="auth_user_user_permi_permission_id_1fbb5f2c_fk_auth_perm">
+    <foreign-key id="373" parent="296" name="auth_user_user_permi_permission_id_1fbb5f2c_fk_auth_perm">
       <ColNames>permission_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>auth_permission</RefTableName>
     </foreign-key>
-    <index id="372" parent="296" name="PRIMARY">
+    <index id="374" parent="296" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="373" parent="296" name="auth_user_user_permissions_user_id_permission_id_14a6b632_uniq">
+    <index id="375" parent="296" name="auth_user_user_permissions_user_id_permission_id_14a6b632_uniq">
       <ColNames>user_id
 permission_id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="374" parent="296" name="auth_user_user_permi_permission_id_1fbb5f2c_fk_auth_perm">
+    <index id="376" parent="296" name="auth_user_user_permi_permission_id_1fbb5f2c_fk_auth_perm">
       <ColNames>permission_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="375" parent="296" name="PRIMARY">
+    <key id="377" parent="296" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="376" parent="296" name="auth_user_user_permissions_user_id_permission_id_14a6b632_uniq">
+    <key id="378" parent="296" name="auth_user_user_permissions_user_id_permission_id_14a6b632_uniq">
       <UnderlyingIndexName>auth_user_user_permissions_user_id_permission_id_14a6b632_uniq</UnderlyingIndexName>
     </key>
-    <column id="377" parent="297" name="id">
-      <AutoIncrement>3</AutoIncrement>
+    <column id="379" parent="297" name="id">
+      <AutoIncrement>6</AutoIncrement>
       <DasType>bigint(20) unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="378" parent="297" name="work_point_name">
+    <column id="380" parent="297" name="work_point_name">
       <DasType>varchar(100)|0s</DasType>
       <DefaultExpression>&apos;&apos;</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="379" parent="297" name="defect_name">
+    <column id="381" parent="297" name="defect_name">
       <DasType>varchar(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="380" parent="297" name="defect_level">
+    <column id="382" parent="297" name="defect_level">
       <DasType>varchar(5)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="381" parent="297" name="start_well_number">
+    <column id="383" parent="297" name="start_well_number">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="382" parent="297" name="end_well_number">
+    <column id="384" parent="297" name="end_well_number">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <column id="383" parent="297" name="defect_start_position_m">
+    <column id="385" parent="297" name="defect_start_position_m">
       <DasType>float|0s</DasType>
       <NotNull>1</NotNull>
       <Position>7</Position>
     </column>
-    <column id="384" parent="297" name="defect_end_position_m">
+    <column id="386" parent="297" name="defect_end_position_m">
       <DasType>float|0s</DasType>
       <NotNull>1</NotNull>
       <Position>8</Position>
     </column>
-    <column id="385" parent="297" name="defect_start_position_clock">
+    <column id="387" parent="297" name="defect_start_position_clock">
       <DasType>int(11)|0s</DasType>
       <Position>9</Position>
     </column>
-    <column id="386" parent="297" name="defect_end_position_clock">
+    <column id="388" parent="297" name="defect_end_position_clock">
       <DasType>int(11)|0s</DasType>
       <Position>10</Position>
     </column>
-    <column id="387" parent="297" name="pipe_type">
+    <column id="389" parent="297" name="pipe_type">
       <DasType>varchar(10)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>11</Position>
     </column>
-    <column id="388" parent="297" name="pipe_material">
+    <column id="390" parent="297" name="pipe_material">
       <DasType>varchar(10)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>12</Position>
     </column>
-    <column id="389" parent="297" name="start_depth">
+    <column id="391" parent="297" name="start_depth">
       <DasType>float|0s</DasType>
       <NotNull>1</NotNull>
       <Position>13</Position>
     </column>
-    <column id="390" parent="297" name="end_depth">
+    <column id="392" parent="297" name="end_depth">
       <DasType>float|0s</DasType>
       <NotNull>1</NotNull>
       <Position>14</Position>
     </column>
-    <column id="391" parent="297" name="pipe_diameter">
+    <column id="393" parent="297" name="pipe_diameter">
       <DasType>float|0s</DasType>
       <NotNull>1</NotNull>
       <Position>15</Position>
     </column>
-    <column id="392" parent="297" name="area_type">
+    <column id="394" parent="297" name="area_type">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>16</Position>
     </column>
-    <column id="393" parent="297" name="structural_defect_parameter">
+    <column id="395" parent="297" name="structural_defect_parameter">
       <DasType>float|0s</DasType>
       <NotNull>1</NotNull>
       <Position>17</Position>
     </column>
-    <column id="394" parent="297" name="defect_density">
+    <column id="396" parent="297" name="defect_density">
       <DasType>float|0s</DasType>
       <NotNull>1</NotNull>
       <Position>18</Position>
     </column>
-    <column id="395" parent="297" name="soil_type">
+    <column id="397" parent="297" name="soil_type">
       <DasType>varchar(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>19</Position>
     </column>
-    <column id="396" parent="297" name="wet_loess_level">
+    <column id="398" parent="297" name="wet_loess_level">
       <DasType>varchar(5)|0s</DasType>
       <Position>20</Position>
     </column>
-    <column id="397" parent="297" name="expansive_soil_level">
+    <column id="399" parent="297" name="expansive_soil_level">
       <DasType>varchar(5)|0s</DasType>
       <Position>21</Position>
     </column>
-    <column id="398" parent="297" name="silt_type">
+    <column id="400" parent="297" name="silt_type">
       <DasType>varchar(10)|0s</DasType>
       <Position>22</Position>
     </column>
-    <column id="399" parent="297" name="pipe_length">
+    <column id="401" parent="297" name="pipe_length">
       <DasType>decimal(5,2 digit)|0s</DasType>
       <Position>23</Position>
     </column>
-    <index id="400" parent="297" name="PRIMARY">
+    <column id="402" parent="297" name="defect_length_over_1_5m">
+      <Comment>纵向净距大于1.5m的缺陷长度（米）</Comment>
+      <DasType>decimal(5,2 digit)|0s</DasType>
+      <DefaultExpression>0.00</DefaultExpression>
+      <Position>24</Position>
+    </column>
+    <column id="403" parent="297" name="defect_length_1_to_1_5m">
+      <Comment>纵向净距在1 - 1.5m的缺陷长度（米）</Comment>
+      <DasType>decimal(5,2 digit)|0s</DasType>
+      <DefaultExpression>0.00</DefaultExpression>
+      <Position>25</Position>
+    </column>
+    <column id="404" parent="297" name="defect_score">
+      <Comment>缺陷分值</Comment>
+      <DasType>decimal(5,2 digit)|0s</DasType>
+      <DefaultExpression>0.00</DefaultExpression>
+      <Position>26</Position>
+    </column>
+    <index id="405" parent="297" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="401" parent="297" name="id">
+    <index id="406" parent="297" name="id">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="402" parent="297" name="PRIMARY">
+    <key id="407" parent="297" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="403" parent="297" name="id">
+    <key id="408" parent="297" name="id">
       <UnderlyingIndexName>id</UnderlyingIndexName>
     </key>
-    <column id="404" parent="298" name="id">
-      <AutoIncrement>3</AutoIncrement>
+    <column id="409" parent="298" name="id">
+      <AutoIncrement>4</AutoIncrement>
       <DasType>bigint(20) unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="405" parent="298" name="defect_info_id">
+    <column id="410" parent="298" name="defect_info_id">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="406" parent="298" name="repair_suggestion">
+    <column id="411" parent="298" name="repair_suggestion">
       <DasType>text|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <index id="407" parent="298" name="PRIMARY">
+    <column id="412" parent="298" name="repair_measures">
+      <DasType>text|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <index id="413" parent="298" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="408" parent="298" name="id">
+    <index id="414" parent="298" name="id">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="409" parent="298" name="defect_info_id">
+    <index id="415" parent="298" name="defect_info_id">
       <ColNames>defect_info_id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="410" parent="298" name="PRIMARY">
+    <key id="416" parent="298" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="411" parent="298" name="id">
+    <key id="417" parent="298" name="id">
       <UnderlyingIndexName>id</UnderlyingIndexName>
     </key>
-    <key id="412" parent="298" name="defect_info_id">
+    <key id="418" parent="298" name="defect_info_id">
       <UnderlyingIndexName>defect_info_id</UnderlyingIndexName>
     </key>
-    <column id="413" parent="299" name="id">
-      <AutoIncrement>1113</AutoIncrement>
+    <column id="419" parent="299" name="id">
+      <AutoIncrement>1137</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="414" parent="299" name="action_time">
+    <column id="420" parent="299" name="action_time">
       <DasType>datetime(6)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="415" parent="299" name="object_id">
+    <column id="421" parent="299" name="object_id">
       <DasType>longtext|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="416" parent="299" name="object_repr">
+    <column id="422" parent="299" name="object_repr">
       <DasType>varchar(200)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="417" parent="299" name="action_flag">
+    <column id="423" parent="299" name="action_flag">
       <DasType>smallint(5) unsigned|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="418" parent="299" name="change_message">
+    <column id="424" parent="299" name="change_message">
       <DasType>longtext|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <column id="419" parent="299" name="content_type_id">
+    <column id="425" parent="299" name="content_type_id">
       <DasType>int(11)|0s</DasType>
       <Position>7</Position>
     </column>
-    <column id="420" parent="299" name="user_id">
+    <column id="426" parent="299" name="user_id">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>8</Position>
     </column>
-    <foreign-key id="421" parent="299" name="django_admin_log_content_type_id_c4bce8eb_fk_django_co">
+    <foreign-key id="427" parent="299" name="django_admin_log_content_type_id_c4bce8eb_fk_django_co">
       <ColNames>content_type_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>django_content_type</RefTableName>
     </foreign-key>
-    <foreign-key id="422" parent="299" name="django_admin_log_user_id_c564eba6_fk_auth_user_id">
+    <foreign-key id="428" parent="299" name="django_admin_log_user_id_c564eba6_fk_auth_user_id">
       <ColNames>user_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>auth_user</RefTableName>
     </foreign-key>
-    <index id="423" parent="299" name="PRIMARY">
+    <index id="429" parent="299" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="424" parent="299" name="django_admin_log_content_type_id_c4bce8eb_fk_django_co">
+    <index id="430" parent="299" name="django_admin_log_content_type_id_c4bce8eb_fk_django_co">
       <ColNames>content_type_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="425" parent="299" name="django_admin_log_user_id_c564eba6_fk_auth_user_id">
+    <index id="431" parent="299" name="django_admin_log_user_id_c564eba6_fk_auth_user_id">
       <ColNames>user_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="426" parent="299" name="PRIMARY">
+    <key id="432" parent="299" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="427" parent="300" name="id">
-      <AutoIncrement>41</AutoIncrement>
+    <column id="433" parent="300" name="id">
+      <AutoIncrement>44</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="428" parent="300" name="app_label">
+    <column id="434" parent="300" name="app_label">
       <DasType>varchar(100)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="429" parent="300" name="model">
+    <column id="435" parent="300" name="model">
       <DasType>varchar(100)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <index id="430" parent="300" name="PRIMARY">
+    <index id="436" parent="300" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="431" parent="300" name="django_content_type_app_label_model_76bd3d3b_uniq">
+    <index id="437" parent="300" name="django_content_type_app_label_model_76bd3d3b_uniq">
       <ColNames>app_label
 model</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="432" parent="300" name="PRIMARY">
+    <key id="438" parent="300" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="433" parent="300" name="django_content_type_app_label_model_76bd3d3b_uniq">
+    <key id="439" parent="300" name="django_content_type_app_label_model_76bd3d3b_uniq">
       <UnderlyingIndexName>django_content_type_app_label_model_76bd3d3b_uniq</UnderlyingIndexName>
     </key>
-    <column id="434" parent="301" name="id">
-      <AutoIncrement>46</AutoIncrement>
+    <column id="440" parent="301" name="id">
+      <AutoIncrement>47</AutoIncrement>
       <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="435" parent="301" name="app">
+    <column id="441" parent="301" name="app">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="436" parent="301" name="name">
+    <column id="442" parent="301" name="name">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="437" parent="301" name="applied">
+    <column id="443" parent="301" name="applied">
       <DasType>datetime(6)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <index id="438" parent="301" name="PRIMARY">
+    <index id="444" parent="301" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="439" parent="301" name="PRIMARY">
+    <key id="445" parent="301" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="440" parent="302" name="session_key">
+    <column id="446" parent="302" name="session_key">
       <DasType>varchar(40)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="441" parent="302" name="session_data">
+    <column id="447" parent="302" name="session_data">
       <DasType>longtext|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="442" parent="302" name="expire_date">
+    <column id="448" parent="302" name="expire_date">
       <DasType>datetime(6)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <index id="443" parent="302" name="PRIMARY">
+    <index id="449" parent="302" name="PRIMARY">
       <ColNames>session_key</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="444" parent="302" name="django_session_expire_date_a5c62663">
+    <index id="450" parent="302" name="django_session_expire_date_a5c62663">
       <ColNames>expire_date</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="445" parent="302" name="PRIMARY">
+    <key id="451" parent="302" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="446" parent="303" name="id">
+    <column id="452" parent="303" name="id">
       <AutoIncrement>21</AutoIncrement>
       <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="447" parent="303" name="imgmo1">
+    <column id="453" parent="303" name="imgmo1">
       <DasType>varchar(100)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="448" parent="303" name="imgmo2">
+    <column id="454" parent="303" name="imgmo2">
       <DasType>varchar(100)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="449" parent="303" name="remarks">
+    <column id="455" parent="303" name="remarks">
       <DasType>longtext|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="450" parent="303" name="state">
+    <column id="456" parent="303" name="state">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="451" parent="303" name="name">
+    <column id="457" parent="303" name="name">
       <DasType>varchar(25)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <column id="452" parent="303" name="pno">
+    <column id="458" parent="303" name="pno">
       <DasType>varchar(25)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>7</Position>
     </column>
-    <index id="453" parent="303" name="PRIMARY">
+    <index id="459" parent="303" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="454" parent="303" name="emr_mo_pno_012f34ff_uniq">
+    <index id="460" parent="303" name="emr_mo_pno_012f34ff_uniq">
       <ColNames>pno</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="455" parent="303" name="emr_mo_name_id_472bdcde_fk_emr_pt_id">
+    <index id="461" parent="303" name="emr_mo_name_id_472bdcde_fk_emr_pt_id">
       <ColNames>name</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="456" parent="303" name="PRIMARY">
+    <key id="462" parent="303" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="457" parent="303" name="emr_mo_pno_012f34ff_uniq">
+    <key id="463" parent="303" name="emr_mo_pno_012f34ff_uniq">
       <UnderlyingIndexName>emr_mo_pno_012f34ff_uniq</UnderlyingIndexName>
     </key>
-    <column id="458" parent="304" name="id">
+    <column id="464" parent="304" name="id">
       <AutoIncrement>43</AutoIncrement>
       <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="459" parent="304" name="name">
+    <column id="465" parent="304" name="name">
       <DasType>varchar(25)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="460" parent="304" name="gender">
+    <column id="466" parent="304" name="gender">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="461" parent="304" name="age">
+    <column id="467" parent="304" name="age">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="462" parent="304" name="pno">
+    <column id="468" parent="304" name="pno">
       <DasType>varchar(25)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="463" parent="304" name="admission_diagnosis">
+    <column id="469" parent="304" name="admission_diagnosis">
       <DasType>longtext|0s</DasType>
       <Position>6</Position>
     </column>
-    <column id="464" parent="304" name="aided_examination">
+    <column id="470" parent="304" name="aided_examination">
       <DasType>longtext|0s</DasType>
       <Position>7</Position>
     </column>
-    <column id="465" parent="304" name="blood_pressure">
+    <column id="471" parent="304" name="blood_pressure">
       <DasType>longtext|0s</DasType>
       <Position>8</Position>
     </column>
-    <column id="466" parent="304" name="breathe">
+    <column id="472" parent="304" name="breathe">
       <DasType>int(10) unsigned|0s</DasType>
       <Position>9</Position>
     </column>
-    <column id="467" parent="304" name="chief_complaint">
+    <column id="473" parent="304" name="chief_complaint">
       <DasType>longtext|0s</DasType>
       <Position>10</Position>
     </column>
-    <column id="468" parent="304" name="other">
+    <column id="474" parent="304" name="other">
       <DasType>longtext|0s</DasType>
       <Position>11</Position>
     </column>
-    <column id="469" parent="304" name="past_history">
+    <column id="475" parent="304" name="past_history">
       <DasType>longtext|0s</DasType>
       <Position>12</Position>
     </column>
-    <column id="470" parent="304" name="pulse">
+    <column id="476" parent="304" name="pulse">
       <DasType>int(10) unsigned|0s</DasType>
       <Position>13</Position>
     </column>
-    <column id="471" parent="304" name="spo2">
+    <column id="477" parent="304" name="spo2">
       <DasType>longtext|0s</DasType>
       <Position>14</Position>
     </column>
-    <column id="472" parent="304" name="temperature">
+    <column id="478" parent="304" name="temperature">
       <DasType>double|0s</DasType>
       <Position>15</Position>
     </column>
-    <index id="473" parent="304" name="PRIMARY">
+    <index id="479" parent="304" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="474" parent="304" name="emr_pt_pno_472b1cb2_uniq">
+    <index id="480" parent="304" name="emr_pt_pno_472b1cb2_uniq">
       <ColNames>pno</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="475" parent="304" name="emr_pt_name_23d62e2e">
+    <index id="481" parent="304" name="emr_pt_name_23d62e2e">
       <ColNames>name</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="476" parent="304" name="PRIMARY">
+    <key id="482" parent="304" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="477" parent="304" name="emr_pt_pno_472b1cb2_uniq">
+    <key id="483" parent="304" name="emr_pt_pno_472b1cb2_uniq">
       <UnderlyingIndexName>emr_pt_pno_472b1cb2_uniq</UnderlyingIndexName>
     </key>
-    <column id="478" parent="305" name="id">
+    <column id="484" parent="305" name="id">
       <AutoIncrement>27</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="479" parent="305" name="serial_number">
+    <column id="485" parent="305" name="serial_number">
       <DasType>varchar(25)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="480" parent="305" name="segment_type">
+    <column id="486" parent="305" name="segment_type">
       <DasType>varchar(25)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="481" parent="305" name="material">
+    <column id="487" parent="305" name="material">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="482" parent="305" name="diameter">
+    <column id="488" parent="305" name="diameter">
       <DasType>float|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="483" parent="305" name="length">
+    <column id="489" parent="305" name="length">
       <DasType>float|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <column id="484" parent="305" name="defect_type">
+    <column id="490" parent="305" name="defect_type">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>7</Position>
     </column>
-    <column id="485" parent="305" name="defect_name">
+    <column id="491" parent="305" name="defect_name">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>8</Position>
     </column>
-    <column id="486" parent="305" name="defect_code">
+    <column id="492" parent="305" name="defect_code">
       <DasType>varchar(25)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>9</Position>
     </column>
-    <column id="487" parent="305" name="defect_level">
+    <column id="493" parent="305" name="defect_level">
       <DasType>int(11)|0s</DasType>
       <Position>10</Position>
     </column>
-    <column id="488" parent="305" name="defect_density">
+    <column id="494" parent="305" name="defect_density">
       <DasType>longtext|0s</DasType>
       <NotNull>1</NotNull>
       <Position>11</Position>
     </column>
-    <column id="489" parent="305" name="defect_image">
+    <column id="495" parent="305" name="defect_image">
       <DasType>varchar(45)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>12</Position>
     </column>
-    <index id="490" parent="305" name="PRIMARY">
+    <index id="496" parent="305" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="491" parent="305" name="serial_number">
+    <index id="497" parent="305" name="serial_number">
       <ColNames>serial_number</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="492" parent="305" name="PRIMARY">
+    <key id="498" parent="305" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="493" parent="305" name="serial_number">
+    <key id="499" parent="305" name="serial_number">
       <UnderlyingIndexName>serial_number</UnderlyingIndexName>
     </key>
-    <column id="494" parent="306" name="id">
+    <column id="500" parent="306" name="id">
+      <AutoIncrement>17</AutoIncrement>
+      <DasType>bigint(20) unsigned|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="501" parent="306" name="work_point_name">
+      <DasType>varchar(100)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="502" parent="306" name="pipe_length">
+      <DasType>decimal(5,2 digit)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="503" parent="306" name="start_well_number">
+      <DasType>varchar(50)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="504" parent="306" name="end_well_number">
+      <DasType>varchar(50)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="505" parent="306" name="pipe_type">
+      <DasType>varchar(10)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <column id="506" parent="306" name="pipe_material">
+      <DasType>varchar(10)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>7</Position>
+    </column>
+    <column id="507" parent="306" name="start_depth">
+      <DasType>decimal(3,2 digit)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>8</Position>
+    </column>
+    <column id="508" parent="306" name="end_depth">
+      <DasType>decimal(3,2 digit)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>9</Position>
+    </column>
+    <column id="509" parent="306" name="pipe_diameter">
+      <DasType>decimal(6,2 digit)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>10</Position>
+    </column>
+    <column id="510" parent="306" name="defect_name">
+      <DasType>varchar(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>11</Position>
+    </column>
+    <column id="511" parent="306" name="defect_level">
+      <DasType>varchar(5)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>12</Position>
+    </column>
+    <column id="512" parent="306" name="defect_start_position_m">
+      <DasType>decimal(5,2 digit)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>13</Position>
+    </column>
+    <column id="513" parent="306" name="defect_end_position_m">
+      <DasType>decimal(5,2 digit)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>14</Position>
+    </column>
+    <column id="514" parent="306" name="defect_start_position_clock">
+      <DasType>int(11)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>15</Position>
+    </column>
+    <column id="515" parent="306" name="defect_end_position_clock">
+      <DasType>int(11)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>16</Position>
+    </column>
+    <index id="516" parent="306" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="517" parent="306" name="id">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="518" parent="306" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <key id="519" parent="306" name="id">
+      <UnderlyingIndexName>id</UnderlyingIndexName>
+    </key>
+    <column id="520" parent="307" name="id">
+      <AutoIncrement>17</AutoIncrement>
+      <DasType>bigint(20) unsigned|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="521" parent="307" name="defect_info_id">
+      <DasType>int(11)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="522" parent="307" name="repair_suggestion">
+      <DasType>text|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <index id="523" parent="307" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="524" parent="307" name="id">
+      <ColNames>id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <index id="525" parent="307" name="defect_info_id">
+      <ColNames>defect_info_id</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="526" parent="307" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <key id="527" parent="307" name="id">
+      <UnderlyingIndexName>id</UnderlyingIndexName>
+    </key>
+    <key id="528" parent="307" name="defect_info_id">
+      <UnderlyingIndexName>defect_info_id</UnderlyingIndexName>
+    </key>
+    <column id="529" parent="308" name="id">
       <AutoIncrement>48</AutoIncrement>
       <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="495" parent="306" name="name">
+    <column id="530" parent="308" name="name">
       <DasType>varchar(15)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="496" parent="306" name="image">
+    <column id="531" parent="308" name="image">
       <DasType>varchar(100)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="497" parent="306" name="state">
+    <column id="532" parent="308" name="state">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="498" parent="306" name="crack_width">
+    <column id="533" parent="308" name="crack_width">
       <DasType>float|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="499" parent="306" name="crack_area">
+    <column id="534" parent="308" name="crack_area">
       <DasType>float|0s</DasType>
       <Position>6</Position>
     </column>
-    <index id="500" parent="306" name="PRIMARY">
+    <index id="535" parent="308" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="501" parent="306" name="PRIMARY">
+    <key id="536" parent="308" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="502" parent="307" name="id">
+    <column id="537" parent="309" name="id">
       <AutoIncrement>3</AutoIncrement>
       <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="503" parent="307" name="name">
+    <column id="538" parent="309" name="name">
       <DasType>varchar(15)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="504" parent="307" name="image">
+    <column id="539" parent="309" name="image">
       <DasType>varchar(100)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="505" parent="307" name="state">
+    <column id="540" parent="309" name="state">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <index id="506" parent="307" name="PRIMARY">
+    <index id="541" parent="309" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="507" parent="307" name="PRIMARY">
+    <key id="542" parent="309" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="508" parent="308" name="id">
+    <column id="543" parent="310" name="id">
       <AutoIncrement>75</AutoIncrement>
       <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="509" parent="308" name="name">
+    <column id="544" parent="310" name="name">
       <DasType>varchar(15)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="510" parent="308" name="icon">
+    <column id="545" parent="310" name="icon">
       <DasType>varchar(100)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="511" parent="308" name="state">
+    <column id="546" parent="310" name="state">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="512" parent="308" name="tips">
+    <column id="547" parent="310" name="tips">
       <DasType>longtext|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <index id="513" parent="308" name="PRIMARY">
+    <index id="548" parent="310" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="514" parent="308" name="PRIMARY">
+    <key id="549" parent="310" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="515" parent="309" name="id">
+    <column id="550" parent="311" name="id">
       <AutoIncrement>29</AutoIncrement>
       <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="516" parent="309" name="name">
+    <column id="551" parent="311" name="name">
       <DasType>varchar(45)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="517" parent="309" name="icon">
+    <column id="552" parent="311" name="icon">
       <DasType>varchar(45)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="518" parent="309" name="state">
+    <column id="553" parent="311" name="state">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="519" parent="309" name="tips">
+    <column id="554" parent="311" name="tips">
       <DasType>varchar(45)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <index id="520" parent="309" name="PRIMARY">
+    <index id="555" parent="311" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="521" parent="309" name="PRIMARY">
+    <key id="556" parent="311" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="522" parent="310" name="id">
+    <column id="557" parent="312" name="id">
       <AutoIncrement>10</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="523" parent="310" name="name">
+    <column id="558" parent="312" name="name">
       <DasType>varchar(15)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="524" parent="310" name="icon">
+    <column id="559" parent="312" name="icon">
       <DasType>varchar(100)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="525" parent="310" name="state">
+    <column id="560" parent="312" name="state">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="526" parent="310" name="tips">
+    <column id="561" parent="312" name="tips">
       <DasType>varchar(45)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <index id="527" parent="310" name="PRIMARY">
+    <index id="562" parent="312" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="528" parent="310" name="PRIMARY">
+    <key id="563" parent="312" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="529" parent="311" name="id">
+    <column id="564" parent="313" name="id">
       <AutoIncrement>9</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="530" parent="311" name="name">
+    <column id="565" parent="313" name="name">
       <DasType>varchar(15)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="531" parent="311" name="icon">
+    <column id="566" parent="313" name="icon">
       <DasType>varchar(100)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="532" parent="311" name="state">
+    <column id="567" parent="313" name="state">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="533" parent="311" name="tips">
+    <column id="568" parent="313" name="tips">
       <DasType>varchar(45)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <index id="534" parent="311" name="PRIMARY">
+    <index id="569" parent="313" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="535" parent="311" name="PRIMARY">
+    <key id="570" parent="313" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="536" parent="312" name="id">
+    <column id="571" parent="314" name="id">
       <AutoIncrement>7</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="537" parent="312" name="name">
+    <column id="572" parent="314" name="name">
       <DasType>varchar(15)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="538" parent="312" name="icon">
+    <column id="573" parent="314" name="icon">
       <DasType>varchar(100)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="539" parent="312" name="state">
+    <column id="574" parent="314" name="state">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="540" parent="312" name="tips">
+    <column id="575" parent="314" name="tips">
       <DasType>varchar(45)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <index id="541" parent="312" name="PRIMARY">
+    <index id="576" parent="314" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="542" parent="312" name="PRIMARY">
+    <key id="577" parent="314" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="543" parent="313" name="id">
+    <column id="578" parent="315" name="id">
       <AutoIncrement>18</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="544" parent="313" name="name">
+    <column id="579" parent="315" name="name">
       <DasType>varchar(15)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="545" parent="313" name="icon">
+    <column id="580" parent="315" name="icon">
       <DasType>varchar(100)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="546" parent="313" name="state">
+    <column id="581" parent="315" name="state">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="547" parent="313" name="tips">
+    <column id="582" parent="315" name="tips">
       <DasType>varchar(45)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <index id="548" parent="313" name="PRIMARY">
+    <index id="583" parent="315" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="549" parent="313" name="PRIMARY">
+    <key id="584" parent="315" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="550" parent="314" name="id">
+    <column id="585" parent="316" name="id">
       <AutoIncrement>69</AutoIncrement>
       <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="551" parent="314" name="name">
+    <column id="586" parent="316" name="name">
       <DasType>varchar(128)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="552" parent="314" name="defect_type">
+    <column id="587" parent="316" name="defect_type">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="553" parent="314" name="age">
+    <column id="588" parent="316" name="age">
       <DasType>varchar(15)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="554" parent="314" name="image">
+    <column id="589" parent="316" name="image">
       <DasType>varchar(100)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="555" parent="314" name="state">
+    <column id="590" parent="316" name="state">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <column id="556" parent="314" name="diagnosis">
+    <column id="591" parent="316" name="diagnosis">
       <DasType>longtext|0s</DasType>
       <NotNull>1</NotNull>
       <Position>7</Position>
     </column>
-    <column id="557" parent="314" name="defect_density">
+    <column id="592" parent="316" name="defect_density">
       <DasType>longtext|0s</DasType>
       <NotNull>1</NotNull>
       <Position>8</Position>
     </column>
-    <index id="558" parent="314" name="PRIMARY">
+    <index id="593" parent="316" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="559" parent="314" name="patient_class_name_2e4c68d0">
+    <index id="594" parent="316" name="patient_class_name_2e4c68d0">
       <ColNames>name</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="560" parent="314" name="PRIMARY">
+    <key id="595" parent="316" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="561" parent="315" name="name">
+    <column id="596" parent="317" name="name">
       <DasType>varchar(45)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="562" parent="315" name="image">
+    <column id="597" parent="317" name="image">
       <DasType>varchar(45)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="563" parent="315" name="before_text">
+    <column id="598" parent="317" name="before_text">
       <DasType>varchar(45)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="564" parent="315" name="id">
+    <column id="599" parent="317" name="id">
       <DasType>varchar(45)|0s</DasType>
       <Position>4</Position>
     </column>
-    <index id="565" parent="315" name="PRIMARY">
+    <index id="600" parent="317" name="PRIMARY">
       <ColNames>name</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="566" parent="315" name="PRIMARY">
+    <key id="601" parent="317" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="567" parent="316" name="id">
+    <column id="602" parent="318" name="id">
       <AutoIncrement>10</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="568" parent="316" name="name">
+    <column id="603" parent="318" name="name">
       <DasType>varchar(15)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="569" parent="316" name="pipe_type">
+    <column id="604" parent="318" name="pipe_type">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="570" parent="316" name="pipe_material">
+    <column id="605" parent="318" name="pipe_material">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="571" parent="316" name="pipe_diameter">
+    <column id="606" parent="318" name="pipe_diameter">
       <DasType>float|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="572" parent="316" name="pipe_length">
+    <column id="607" parent="318" name="pipe_length">
       <DasType>float|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <column id="573" parent="316" name="inspection_length">
+    <column id="608" parent="318" name="inspection_length">
       <DasType>float|0s</DasType>
       <NotNull>1</NotNull>
       <Position>7</Position>
     </column>
-    <column id="574" parent="316" name="start_depth">
+    <column id="609" parent="318" name="start_depth">
       <DasType>float|0s</DasType>
       <NotNull>1</NotNull>
       <Position>8</Position>
     </column>
-    <column id="575" parent="316" name="end_depth">
+    <column id="610" parent="318" name="end_depth">
       <DasType>float|0s</DasType>
       <NotNull>1</NotNull>
       <Position>9</Position>
     </column>
-    <column id="576" parent="316" name="defect_location">
+    <column id="611" parent="318" name="defect_location">
       <DasType>varchar(100)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>10</Position>
     </column>
-    <column id="577" parent="316" name="defect_type">
+    <column id="612" parent="318" name="defect_type">
       <DasType>varchar(100)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>11</Position>
     </column>
-    <column id="578" parent="316" name="inspection_description">
+    <column id="613" parent="318" name="inspection_description">
       <DasType>text|0s</DasType>
       <NotNull>1</NotNull>
       <Position>12</Position>
     </column>
-    <column id="579" parent="316" name="state">
+    <column id="614" parent="318" name="state">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>13</Position>
     </column>
-    <index id="580" parent="316" name="PRIMARY">
+    <index id="615" parent="318" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="581" parent="316" name="PRIMARY">
+    <key id="616" parent="318" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>

@@ -7,9 +7,11 @@
     <list default="true" id="1105b710-c527-4eae-9915-c06e0528bcc6" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/0c12694e-9173-4ee9-aa34-fdb0bce316b4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0c12694e-9173-4ee9-aa34-fdb0bce316b4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0c12694e-9173-4ee9-aa34-fdb0bce316b4/storage_v2/_src_/schema/pipedb.rNoaxQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0c12694e-9173-4ee9-aa34-fdb0bce316b4/storage_v2/_src_/schema/pipedb.rNoaxQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/defect_repair/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/defect_repair/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/defect_repair/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/defect_repair/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpleui_demo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/simpleui_demo/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,12 +162,25 @@
       <workItem from="1743597971441" duration="5049000" />
       <workItem from="1743822374886" duration="11059000" />
       <workItem from="1744198648498" duration="669000" />
-      <workItem from="1745320480753" duration="771000" />
+      <workItem from="1745320480753" duration="3271000" />
+      <workItem from="1746707757137" duration="11861000" />
+      <workItem from="1748425307044" duration="6584000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Pipe_network_defect_system25_2_4$manage.coverage" NAME="manage 覆盖结果" MODIFIED="1743428267876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />

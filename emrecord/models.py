@@ -23,14 +23,16 @@ class Patient(models.Model):
         verbose_name='序号',
         help_text='序号应该唯一',
         unique=True,
-        db_index=True
+        db_index=True,
+        default='0000'
     )
 
     # 管段类型
     segment_type = models.CharField(
         max_length=25,
         verbose_name='管段类型',
-        db_index=True
+        db_index=True,
+        default='排水管道'
     )
 
     # 管段材质
@@ -41,19 +43,22 @@ class Patient(models.Model):
     material = models.IntegerField(
         choices=material_choices,
         verbose_name='管段材质',
-        help_text='请选择管段材质'
+        help_text='请选择管段材质',
+        default=1
     )
 
     # 管段直径
     diameter = models.FloatField(
         verbose_name='管段直径mm',
-        help_text='请输入管段直径'
+        help_text='请输入管段直径',
+        default=300
     )
 
     # 管段长度
     length = models.FloatField(
         verbose_name='管段长度m',
-        help_text='请输入管段长度'
+        help_text='请输入管段长度',
+        default=0
     )
 
     # 缺陷类型
@@ -64,27 +69,32 @@ class Patient(models.Model):
     defect_type = models.IntegerField(
         choices=defect_type_choices,
         verbose_name='缺陷类型',
-        help_text='请选择缺陷类型'
+        help_text='请选择缺陷类型',
+        default=1
     )
 
     # 缺陷名称
     defect_name = models.CharField(
         max_length=50,
         verbose_name='缺陷名称',
-        help_text='请输入缺陷名称'
+        help_text='请输入缺陷名称',
+        default=''
     )
 
     # 缺陷代码
     defect_code = models.CharField(
         max_length=25,
         verbose_name='缺陷代码',
-        help_text='请输入缺陷代码'
+        help_text='请输入缺陷代码',
+        default=''  # 添加默认值
     )
     # 缺陷图片
     defect_image = models.ImageField(
         upload_to='static/icon/',
         verbose_name='缺陷图片',
-        help_text='请上传缺陷的图片'
+        help_text='请上传缺陷的图片',
+        null=True,  # 允许数据库中为NULL
+        blank=True  # 允许表单中为空
     )
 
     # # 缺陷等级
@@ -104,7 +114,8 @@ class Patient(models.Model):
     defect_density = models.CharField(
         max_length=50,
         verbose_name='缺陷描述',
-        help_text='请输入缺陷描述'
+        help_text='请输入缺陷描述',
+        default=''  # 添加默认值
     )
 
     class Meta:
